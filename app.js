@@ -12,7 +12,7 @@ async function initializeLiff() {
 
 async function initializeApp() {
     document.getElementById('scanQRButton').addEventListener('click', scanQRCode);
-    await liff.getProfile();
+  
 }
 
 // QRコードスキャン
