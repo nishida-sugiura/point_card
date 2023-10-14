@@ -32,7 +32,7 @@ async function scanQRCode() {
 
 // スプレッドシートへのデータ記録（Google Apps Scriptを使用）
 async function recordDataToSpreadsheet(data) {
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycby2D4k19oR1Qt-tSBZ_1kfRTKICG4FyfPIRDrdh56NnpalLE_VFbph1JeaL0U1c0n24jA/exec'; // Google Apps ScriptのURLを設定
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbxX_Ob0_n3H2vf5qEtrmmKmYOnZQ1VrhLV3TM4_m8pHsKgIvZO2LRHEHmK3TIWvUxLqiQ/exec'; // Google Apps ScriptのURLを設定
     const response = await fetch(scriptUrl, {
         method: 'POST',
         body: JSON.stringify({ data: data }),
