@@ -10,9 +10,10 @@ async function initializeLiff() {
     }
 }
 
+
 async function initializeApp() {
-    document.getElementById('scanQRButton').addEventListener('click', scanQRCode);
-  
+  document.getElementById('scanQRButton').addEventListener('click', scanQRCode);
+    await liff.getProfile();
 }
 
 // QRコードスキャン
@@ -49,3 +50,9 @@ async function recordDataToSpreadsheet(data) {
 
 // LIFFの初期化後にアプリを起動
 initializeLiff();
+
+
+
+
+
+
